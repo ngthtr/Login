@@ -83,11 +83,14 @@
             android:gravity="center"
             android:text="Next"
             android:textAllCaps="false"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
             android:textSize="@dimen/text_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guidelineH4" />
+            app:layout_constraintTop_toTopOf="@+id/guidelineH85" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineH3"
@@ -97,7 +100,7 @@
             app:layout_constraintGuide_percent="0.3" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineH4"
+            android:id="@+id/guidelineH85"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"

@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Enter your password to sign in with"
+                android:text="Enter your password to sign in with "
                 android:textColor="@color/white"
                 android:textSize="@dimen/paragraph" />
         </LinearLayout>
@@ -71,37 +71,42 @@
                 android:id="@+id/textInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
-                android:hint="Your password"
                 android:textColorHint="@color/white"
-                app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/white">
+                android:layout_marginTop="5dp"
+                app:boxBackgroundColor="@color/white"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:backgroundTint="@color/white"
+                    android:background="@color/black"
+                    android:hint="Your password"
                     android:inputType="textPassword"
                     android:textColor="@color/white"
-                    android:textSize="15dp" />
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/paragraph" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/SignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/guidelineH4">
+            android:weightSum="4"
+            app:layout_constraintTop_toTopOf="@id/guidelineH85">
 
             <TextView
+                android:id="@+id/btnForgotPwd"
+                android:layout_weight="3"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                android:layout_marginHorizontal="15dp"
-                android:gravity="center"
+                android:gravity="center_vertical"
                 android:text="Forget password?"
                 android:textColor="@color/purple_200"
                 android:textSize="@dimen/paragraph"
@@ -109,12 +114,13 @@
 
             <Button
                 android:id="@+id/tvSignIn"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_marginHorizontal="15dp"
+                android:backgroundTint="@color/white"
                 android:text="Sign In"
                 android:textAllCaps="false"
+                android:textColor="@color/black"
                 android:textSize="@dimen/text_btn"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -123,10 +129,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:maxLines="2"
             android:text="By click on Sign in you agree to our Terms of Use and Privacy Policy"
             android:textColor="@color/white"
-            android:maxLines="2"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/SignIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -138,11 +145,11 @@
             app:layout_constraintGuide_percent="0.3" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guidelineH4"
+            android:id="@+id/guidelineH85"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="375dp" />
+            app:layout_constraintGuide_percent="0.45" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.Guideline

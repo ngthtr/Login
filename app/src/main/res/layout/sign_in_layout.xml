@@ -63,7 +63,7 @@
             app:layout_constraintTop_toTopOf="@+id/guidelineH3">
 
             <Button
-                android:id="@+id/btnSignInWithMail"
+                android:id="@+id/btnSignInByMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -97,8 +97,8 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_btn" />
 
-            <Button
-                android:id="@+id/btnLoginWithGoogle"
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btnSignInByGoogle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -111,7 +111,7 @@
         </LinearLayout>
 
         <TableRow
-            android:id="@+id/tbSignUp"
+            android:id="@+id/btnComeToSignUpLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"

@@ -22,6 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".login.SignInActivity"/>
+        <activity android:name=".login.SignInByEmailActivity"/>
+        <activity android:name=".login.SignInByEmailPwdActivity"/>
+        <activity android:name=".login.SignUpActivity"/>
+        <activity android:name=".login.SignUpByEmailActivity"/>
+        <activity android:name=".login.SignInByEmailResetPwdActivity"/>
+        <activity android:name=".apppp.WelcomeActivity"/>
     </application>
 
 </manifest>
