@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="policy">By using our services you are agreeing top our Terms and Privacy Statement</string>
 </resources>
